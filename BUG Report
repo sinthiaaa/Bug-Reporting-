@@ -1,0 +1,77 @@
+### Functional Bugs
+Website Name : https://glitchygoods.fringecore.sh/
+
+
+
+
+**1. Contact Button Navigation Bug**
+- **Issue Description:** Clicking the "Contact" button in the navigation bar correctly triggers the contact API. However, clicking the "Contact" button in the lower section redirects to the "Book Now" section.
+- **Expected Behavior:** Both buttons should trigger the contact API.
+- **Tags:** UI, Navigation, API, Bug
+
+**2. Product Still Shown in Cart After Checkout**
+- **Issue Description:** After checkout, the product remains in the cart and can still be modified.
+- **Expected Behavior:** Checked-out products should be removed from the cart or their quantity should be locked.
+- **Tags:** Cart Functionality, Checkout Process, Bug
+
+**3. Quantity and Subtotal Can Be Reduced to Negative Values in Cart**
+- **Issue Description:** Users can reduce the product quantity to negative values, causing the subtotal to become negative as well.
+- **Expected Behavior:** Product quantity should have a minimum limit of zero. The subtotal should always be positive.
+- **Tags:** Cart Functionality, Quantity Validation, Price Calculation
+
+**4. Home Button Behavior Inconsistent Between Navbar and Lower Section**
+- **Issue Description:** Clicking the "Home" button in the navigation bar redirects to the home API, but clicking the same button in the lower section redirects to the features section.
+- **Expected Behavior:** Both buttons should redirect to the home API.
+- **Tags:** UI, Navigation, Functionality, Routing
+
+**5. Incorrect Product Count Increment in Add-to-Cart Page**
+- **Issue Description:** Product count increments inconsistently (e.g., 1, 2, 4, 5, 7, 9, etc.).
+- **Expected Behavior:** The product count should increment sequentially.
+- **Tags:** Cart Functionality, Counting Issue, Bug
+
+**6. Incorrect Alert Message on Invalid Login Attempt**
+- **Issue Description:** Entering an incorrect email and password shows the alert "Account is created" instead of an appropriate error message.
+- **Expected Behavior:** An error message such as "Invalid email or password" or "No account found" should appear.
+- **Tags:** Login, Error Message, Bug
+
+**7. Incorrect Price Display in Cart Page**
+- **Issue Description:** An additional "1" is appended to the product's price (e.g., 1192 displayed as 11921).
+- **Expected Behavior:** The correct product price should be shown.
+- **Tags:** Cart Page, Price Display, Bug
+
+---
+
+### Validation Bugs
+
+**8. Name Field Accepting Integer Data on Contact Page**
+- **Issue Description:** The "Name" field allows numeric input without validation.
+- **Expected Behavior:** The field should only accept alphabetic characters and display an error for invalid inputs.
+- **Tags:** Form Validation, Input Validation, Contact Form
+
+**9. Invalid Data Accepted in Booking Section on Home Page**
+- **Issue Description:**
+  - The "Name" field accepts integers and special characters.
+  - The "Phone Number" field accepts string values (letters) instead of only numeric data.
+- **Expected Behavior:**
+  - The "Name" field should only accept alphabetic characters.
+  - The "Phone Number" field should only accept numeric values.
+- **Tags:** Form Validation, Booking Section, Input Validation
+
+---
+
+### UI/UX Bugs
+
+**10. Poor Alignment of "Clear Item" Button in Cart Page**
+- **Issue Description:** The text inside the "Clear Item" button is poorly aligned and distant from the button box.
+- **Expected Behavior:** The text should be properly aligned within the button box.
+- **Tags:** UI, CSS, Alignment Issue, Design
+
+**11. Incorrect Button Label and Alert Behavior on Login Page**
+- **Issue Description:**
+  - The button is labeled "Sign In" instead of "Log In."
+  - Clicking the button with empty fields shows the alert "The account is created."
+- **Expected Behavior:**
+  - The button should be labeled "Log In."
+  - An appropriate validation error (e.g., "Please provide email and password") should be displayed for empty fields.
+- **Tags:** Login Page, Button Label, Error Message
+
