@@ -1,5 +1,4 @@
-# Bug-Reporting-
-of https://glitchygoods.fringecore.sh/
+
 
 # Bug Reports and Issue Tracking
 
